@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0b1020">
+  <title>Dashboard | Zehaimer-care</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+  <main class="dashboard-shell">
+    <header class="dashboard-header">
+      <div class="brand-icon"><i class="fa-solid fa-heart-pulse" aria-hidden="true"></i></div>
+      <p class="eyebrow">ZEHAIMER-CARE</p>
+      <h1>Your health dashboard</h1>
+      <p class="intro">A simple overview of your connected health data.</p>
+    </header>
+
+    <section class="data-container" aria-label="Health measurements">
+      <article class="data-item gps">
+        <div class="data-icon"><i class="fa-solid fa-location-dot" aria-hidden="true"></i></div>
+        <div class="gps-placeholder" aria-label="GPS location not connected"><i class="fa-solid fa-location-crosshairs" aria-hidden="true"></i></div>
+        <div class="data-label">GPS Location</div>
+        <p class="data-status">Waiting for device</p>
+      </article>
+      <article class="data-item heartbeats">
+        <div class="data-icon"><i class="fa-solid fa-heart-pulse" aria-hidden="true"></i></div>
+        <div class="data-value">0 <span>BPM</span></div>
+        <div class="data-label">Heartbeats</div>
+        <p class="data-status">No live reading</p>
+      </article>
+      <article class="data-item pressure">
+        <div class="data-icon"><i class="fa-solid fa-gauge-high" aria-hidden="true"></i></div>
+        <div class="data-value">0 <span>mmHg</span></div>
+        <div class="data-label">Pressure</div>
+        <p class="data-status">No live reading</p>
+      </article>
+      <article class="data-item sugar">
+        <div class="data-icon"><i class="fa-solid fa-droplet" aria-hidden="true"></i></div>
+        <div class="data-value">0 <span>mg/dL</span></div>
+        <div class="data-label">Blood Sugar</div>
+        <p class="data-status">No live reading</p>
+      </article>
+    </section>
+
+    <section class="actions-panel" aria-label="Site actions">
+      <h2>Quick actions</h2>
+      <div class="bottom-section">
+        <a href="../contact%20us/contact.html" class="action-button contact-us"><i class="fa-solid fa-users" aria-hidden="true"></i><span>Contact Us</span><i class="fa-solid fa-arrow-up-right-from-square arrow" aria-hidden="true"></i></a>
+        <button type="button" id="bluetoothButton" class="action-button bluetooth"><i class="fa-brands fa-bluetooth-b" aria-hidden="true"></i><span>Connect by Bluetooth</span><i class="fa-solid fa-arrow-right arrow" aria-hidden="true"></i></button>
+        <button type="button" id="wifiButton" class="action-button wifi"><i class="fa-solid fa-wifi" aria-hidden="true"></i><span>Connect by WiFi</span><i class="fa-solid fa-arrow-right arrow" aria-hidden="true"></i></button>
+      </div>
+      <p class="dashboard-note">Sensor values are placeholders until a supported device is connected.</p>
+    </section>
+    <footer class="dashboard-footer">Zehaimer-care <span>•</span> Health monitoring concept</footer>
+  </main>
+  <script src="main.js"></script>
+</body>
+</html>
